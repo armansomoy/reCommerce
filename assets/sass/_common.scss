@@ -19,6 +19,7 @@ html,
 body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    color: $darkGray;
 }
 
 /* Change text & background color */
@@ -49,21 +50,8 @@ ol {
 }
 
 
-
-
-
-/* Footer Style */
-.footer {
-
-    .copyright {
-        font-size: 0.8rem;
-
-        &__link {
-
-            &:hover,
-            &:focus {
-                text-decoration: underline #ddb180;
-            }
-        }
-    }
+.form-select:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
 }

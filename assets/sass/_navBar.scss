@@ -2,6 +2,10 @@
     height: 50px;
     background: #F5F3F2;
 
+    .col-lg-8 {
+        padding-right: 0px;
+    }
+
     .dropdown {
         margin-top: 10px;
         margin-left: 30px;
@@ -10,7 +14,7 @@
         button {
             font-size: 14px;
             font-weight: normal;
-            color: #252525;
+            color: $darkGray;
         }
     }
 
@@ -19,29 +23,159 @@
         line-height: 50px;
         font-size: 14px;
         font-weight: normal;
-        color: #252525;
-        margin-left: 30px;
+        color: $darkGray;
+        margin-right: 30px;
+        margin-inline-start: 0;
     }
 
-    .form-item {
-        margin-top: 15px;
-        // line-height: 50px;
+    .form-select:focus {
+        border-color: none;
+        outline: 0;
+        box-shadow: none;
     }
 
 
-
-    .country-select.inside input,
-    .country-select.inside input[type=text] {
-        border: none;
-        background: #F5F3F2;
-        width: 180px;
-        padding-left: 10px;
-    }
-
-    .country-select.inside .flag-dropdown {
-        left: auto;
-        right: 0;
+    .form-select {
+        width: 100px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 38px;
+        color: $darkGray;
         background-color: #F5F3F2;
+        background-size: 16px 12px;
+        border: none;
+        display: inline-block;
+    }
+
+}
+
+#search-nav {
+    height: 100px;
+
+    a {
+        line-height: 100px;
+    }
+
+    .search-box {
+        height: 50px;
+        width: 100%;
+        margin-top: 25px;
+
+        /*the container must be positioned relative:*/
+        .custom-select {
+            position: relative;
+            width: 190px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 32px;
+            display: inline-block;
+
+            select {
+                display: none;
+                /*hide original SELECT element:*/
+            }
+
+            .select-selected {
+                background-color: transparent;
+                @include transition(.3s);
+
+                &:hover {
+                    color: #fff;
+                    background-color: $orange;
+                }
+
+                &:hover::after {
+                    border-color: #fff transparent transparent transparent;
+                }
+
+                &:hover.select-arrow-active:after {
+                    border-color: transparent transparent #fff transparent;
+                    top: 13px;
+                }
+            }
+
+            .select-arrow-active {
+                color: #fff !important;
+                background-color: $orange !important;
+            }
+
+
+            /*style the arrow inside the select element:*/
+            .select-selected:after {
+                position: absolute;
+                content: "";
+                top: 20px;
+                right: 20px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-color: $darkGray transparent transparent transparent;
+            }
+
+            /*point the arrow upwards when the select box is open (active):*/
+            .select-selected.select-arrow-active:after {
+                border-color: transparent transparent #fff transparent;
+                top: 13px;
+            }
+
+            /*style the items (options), including the selected item:*/
+            .select-items div,
+            .select-selected {
+                color: $darkGray;
+                padding: 8px 16px;
+                cursor: pointer;
+                user-select: none;
+                border: 1px solid #ebebeb;
+                @include transition(.3s);
+            }
+
+            /*style items (options):*/
+            .select-items {
+                position: absolute;
+                background-color: #fff;
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 99;
+            }
+
+            /*hide the items when the select box is closed:*/
+            .select-hide {
+                display: none;
+            }
+
+            .select-items div:hover,
+            .same-as-selected {
+                color: $orange;
+            }
+        }
+
+        .search-place {
+            display: inline-block;
+            width: 450px;
+            height: 100%;
+            border: none;
+            margin-left: -3px;
+            margin-right: -3px;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+            background: transparent;
+            color: #6b6b6b;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top: -1px;
+        }
+
+        button {
+            width: 120px;
+            color: #fff;
+            font-weight: semi-bold;
+            text-align: center;
+            height: 100%;
+            border: none;
+            background: $orange;
+        }
+
     }
 }
 
