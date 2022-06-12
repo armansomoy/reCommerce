@@ -5,17 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>reCommerce</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- Favicon Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/plugins/select-country/css/countrySelect.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body data-spy="scroll">
 
+  <!-- top-nav start -->
+  <section id="top-nav">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-lg-8">
+          <p> Call Us: <a href="#"> 001-1234-88888 </a> </p>
+          <p> <a href="#"> Address: 38 Block Street, Sydney, AU </a> </p>
+        </div>
+        <!-- <div class="">
+          <form>
+            <div class="form-item">
+              <input id="country_selector" type="text">
+              <label for="country_selector" style="display:none;">Select a country here...</label>
+            </div>
+          </form>
+        </div> -->
+        <div class="col-lg-4 text-end">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Bangla</a></li>
+              <li><a class="dropdown-item" href="#">Hindi</a></li>
+              <li><a class="dropdown-item" href="#">Turkish</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dollar($)
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Taka</a></li>
+              <li><a class="dropdown-item" href="#">Rupee</a></li>
+              <li><a class="dropdown-item" href="#">Turkish</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- top-nav ends -->
+
   <!-- mega-menu start -->
-  <nav class="navbar navbar-expand-lg navbar-dark ">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">Brand</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
@@ -39,7 +88,15 @@
               <li><a class="dropdown-item" href="#"> Submenu item 1 </a></li>
               <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
               <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-              <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+              <li class="sub-dropdown"><a class="dropdown-item " href="#"> Submenu item 3 </a>
+                <ul class="sub-dropdown-menu">
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                </ul>
+
+              </li>
               <li><a class="dropdown-item" href="#"> Submenu item 1 </a></li>
               <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
               <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
@@ -60,10 +117,50 @@
             </ul>
           </li>
         </ul>
-      </div> <!-- navbar-collapse.// -->
-    </div> <!-- container-fluid.// -->
+      </div>
+    </div>
   </nav>
   <!-- mega-menu ends -->
+
+  <div class="general-text">
+    <div class="container-xxl">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sint unde consequuntur beatae assumenda fuga
+        necessitatibus, dolorem ex, omnis laborum eius suscipit sit fugit itaque dolor nemo inventore qui. Commodi error
+        necessitatibus totam doloribus! Rerum odit amet laboriosam quidem quas sunt iure eum numquam iste, laborum id
+        cumque eligendi labore repudiandae maiores dignissimos quibusdam, odio repellat dolore assumenda magni veritatis
+        illo rem ullam. Ut culpa quae quis, minima consequuntur fugit quibusdam minus quos ipsa deserunt unde vel vitae
+        pariatur. Hic aliquam, accusamus itaque, repellat dolore deserunt mollitia totam numquam magnam magni ipsum non
+        ad cum facere dolor omnis consequuntur dolorem impedit quisquam animi! Voluptates, assumenda illum consectetur
+        esse laborum facilis, possimus inventore earum quae, excepturi numquam laudantium ratione? Culpa delectus
+        repellat eius quo architecto excepturi in eum, harum quod ut illo, aut minus expedita dolorum veritatis optio
+        quos ullam? Amet itaque obcaecati, nihil eveniet mollitia accusamus maxime iste quae non repellendus voluptas at
+        minima, error hic, optio modi adipisci. Deleniti, maiores! Minus enim iste iusto, sint voluptas ipsam
+        exercitationem laborum blanditiis magni, adipisci nam doloremque ipsum odio fugit natus itaque quidem alias.
+        Dolorem ab tenetur iste expedita, temporibus eius. Laborum quos, perferendis maxime quidem odit est voluptate
+        amet, vitae incidunt exercitationem delectus nulla consequuntur sed aliquid sint. Praesentium modi minima iusto
+        consequatur quis incidunt quia aut eaque atque nisi? Dolore quae molestiae maxime modi repudiandae ex aut
+        officiis earum minus nihil recusandae cupiditate ad, hic inventore nostrum dolores quo animi reiciendis atque
+        iste porro dicta dignissimos. Accusantium asperiores excepturi quaerat, necessitatibus placeat nostrum nisi
+        tempora ipsa, maiores, dolor ipsum? Quis maiores, nisi nam repudiandae dicta illo molestiae fugit ut mollitia
+        repellendus soluta temporibus, in laudantium, odit odio impedit quaerat voluptatum ducimus ipsa! Velit provident
+        qui at cumque quis? Repellat excepturi mollitia ratione ex inventore doloribus vel omnis, totam laborum ullam
+        distinctio temporibus eum magnam placeat impedit tempora quam. Reprehenderit totam impedit dignissimos sapiente
+        dolor laudantium! Rem quasi delectus, magnam deleniti ducimus beatae molestias consectetur in, mollitia eum
+        optio repellat iste nemo praesentium quas iure. Quisquam minima, enim amet impedit voluptas iste provident
+        perspiciatis alias ab nulla repellat minus harum aliquid modi assumenda suscipit quae reprehenderit culpa
+        tempore consectetur quos consequuntur! Explicabo perspiciatis, dolores tenetur aspernatur, minima maxime illum
+        quod, minus optio labore vitae iste illo nesciunt repellendus unde. Esse voluptatibus voluptatem ut doloremque
+        saepe laboriosam eum architecto, aspernatur quasi, nostrum necessitatibus quo consequuntur qui nesciunt nisi! Ea
+        illum suscipit sint quidem aut labore quis doloremque explicabo, repudiandae, iusto consectetur nemo hic sed
+        natus minus voluptatum obcaecati accusantium exercitationem. Sequi, doloremque repudiandae? Fugit in voluptate
+        porro tenetur quibusdam similique harum sunt cum qui. Minus saepe corrupti provident reprehenderit deserunt
+        laudantium totam dolorem ipsum nisi aut aperiam atque quas corporis quia accusantium, dolorum expedita excepturi
+        assumenda ea. Id magnam hic corporis autem ad distinctio ullam repellendus consequatur illo architecto ratione
+        recusandae facere molestias veniam, repudiandae quae laudantium fugiat a aut quisquam provident. Voluptates
+        voluptatum, aliquam atque pariatur, aperiam, quod cum unde odio incidunt quos mollitia fugit a qui rerum
+        veritatis delectus deserunt.</p>
+    </div>
+  </div>
 
 
   <!-- All Scripts -->
@@ -75,7 +172,17 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
   <script src="./assets/plugins/slick-slider/js/slick.js"></script>
+  <script src="./assets/plugins/select-country/js/countrySelect.min.js"></script>
   <script src="./assets/js/script.js"></script>
+
+
+  <script>
+    $("#country_selector").countrySelect({
+      // defaultCountry: "jp",
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // responsiveDropdown: true,
+    });
+  </script>
 </body>
 
 </html>

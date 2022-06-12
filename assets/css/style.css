@@ -14,7 +14,8 @@
 
 html,
 body {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif; }
 
 /* Change text & background color */
 a,
@@ -30,6 +31,7 @@ button:active {
   outline: none; }
 
 img {
+  width: 100%;
   vertical-align: middle; }
 
 ul,
@@ -42,19 +44,58 @@ ol {
   .footer .copyright__link:hover, .footer .copyright__link:focus {
     text-decoration: underline #ddb180; }
 
+#top-nav {
+  height: 50px;
+  background: #F5F3F2; }
+  #top-nav .dropdown {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: inline-block; }
+    #top-nav .dropdown button {
+      font-size: 14px;
+      font-weight: normal;
+      color: #252525; }
+  #top-nav p {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #252525;
+    margin-left: 30px; }
+  #top-nav .form-item {
+    margin-top: 15px; }
+  #top-nav .country-select.inside input,
+  #top-nav .country-select.inside input[type=text] {
+    border: none;
+    background: #F5F3F2;
+    width: 180px;
+    padding-left: 10px; }
+  #top-nav .country-select.inside .flag-dropdown {
+    left: auto;
+    right: 0;
+    background-color: #F5F3F2; }
+
 nav {
   background-color: #eecaca; }
-  nav .dropdown-submenu {
-    background-color: red;
+  nav .sub-dropdown {
     position: relative; }
-  nav .submenu-box {
-    padding: 15px;
-    background-color: #adfcc5;
-    position: absolute;
-    right: -80px;
-    opacity: 0; }
-  nav .dropdown-submenu:hover .submenu-box {
-    opacity: 1; }
+    nav .sub-dropdown .sub-dropdown-menu {
+      position: absolute;
+      top: 0;
+      right: -68px;
+      background-color: antiquewhite;
+      padding: 15px;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+      margin-top: 0; }
+    nav .sub-dropdown:hover .sub-dropdown-menu {
+      transition: .3s;
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+      transform: rotateX(0deg); }
 
 @media all and (min-width: 992px) {
   .navbar .dropdown-menu-end {

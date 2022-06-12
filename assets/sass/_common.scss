@@ -2,20 +2,23 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	outline: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
-*{
-	scrollbar-width: thin;
+
+* {
+    scrollbar-width: thin;
 }
-::-webkit-scrollbar{
-	width: 5px;
+
+::-webkit-scrollbar {
+    width: 5px;
 }
 
 html,
-body{
-	scroll-behavior: smooth;
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Change text & background color */
@@ -24,24 +27,25 @@ body{
 a,
 a:hover,
 a:active {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 button,
 button:hover,
 button:focus,
 button:active {
-	outline: none;
+    outline: none;
 }
 
-img{
+img {
+    width: 100%;
     vertical-align: middle;
 }
 
 ul,
 ol {
-	list-style: none;
+    list-style: none;
 }
 
 
@@ -49,15 +53,17 @@ ol {
 
 
 /* Footer Style */
-.footer{
+.footer {
 
-	.copyright{
-		font-size: 0.8rem;
-		&__link{
-			&:hover,
-			&:focus{
-				text-decoration: underline #ddb180;
-			}
-		}
-	}
+    .copyright {
+        font-size: 0.8rem;
+
+        &__link {
+
+            &:hover,
+            &:focus {
+                text-decoration: underline #ddb180;
+            }
+        }
+    }
 }
