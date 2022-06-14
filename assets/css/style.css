@@ -87,7 +87,6 @@ ol {
   #search-nav .search-box {
     height: 50px;
     width: 100%;
-    margin-top: 25px;
     /*the container must be positioned relative:*/ }
     #search-nav .search-box .custom-select {
       position: relative;
@@ -160,10 +159,10 @@ ol {
         color: #e5371b; }
     #search-nav .search-box .search-place {
       display: inline-block;
-      width: 450px;
+      width: 430px;
       height: 100%;
       border: none;
-      margin-left: -3px;
+      margin-left: -5px;
       margin-right: -3px;
       border-top: 1px solid #ebebeb;
       border-bottom: 1px solid #ebebeb;
@@ -177,7 +176,8 @@ ol {
       color: #fff;
       font-weight: semi-bold;
       text-align: center;
-      height: 100%;
+      height: 50px;
+      line-height: 50px;
       border: none;
       background: #e5371b; }
 
