@@ -198,7 +198,8 @@ p {
       text-transform: uppercase; }
   #search-nav .third-part ul li {
     display: inline-block;
-    margin: 0px 10px; }
+    margin: 0px 10px;
+    line-height: 0px; }
     #search-nav .third-part ul li i {
       font-size: 22px;
       color: #525151;
@@ -303,7 +304,7 @@ p {
       transition: all linear 0.3s;
       opacity: 1;
       visibility: visible;
-      top: 75%;
+      top: 25px;
       transform: rotateX(0deg); }
 
 .navbar {
