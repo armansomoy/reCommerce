@@ -1,0 +1,127 @@
+#first-footer {
+    padding: 40px 0px;
+    background-color: $bg;
+    border: 1px solid #d7d7d7;
+
+    .title {
+        padding: 0px;
+    }
+
+    p {
+        color: $lightGray;
+    }
+
+    .top-gap {
+        margin-top: 10px;
+    }
+}
+
+#footer {
+    padding: 60px 0;
+    background-color: $bg;
+
+    ul {
+        padding-left: 0px;
+
+        p {
+            font-size: 15px;
+            color: $lightGray;
+
+            a {
+                @include transition(.3s);
+
+                &:hover {
+                    color: $darkGray;
+                }
+            }
+        }
+    }
+
+    .first-part {
+        .img-box {
+            width: 200px;
+            height: 60px;
+        }
+    }
+
+    .footer-title {
+        line-height: 27px;
+        padding: 0px 0px 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $darkGray;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 10px;
+            left: 0;
+            height: 2px;
+            width: 25%;
+            background-color: $orange;
+        }
+    }
+
+    .fourth-part {
+        .footer-title {
+            padding: 0px 0px 60px;
+
+            &::after {
+                bottom: 40px;
+            }
+        }
+
+        .email-place {
+            display: inline-block;
+            width: 240px;
+            height: 52px;
+            border: none;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+            border-left: 1px solid #ebebeb;
+            background: #ffff;
+            color: #6b6b6b;
+            font-size: 15px;
+            padding-left: 15px;
+        }
+
+        button {
+            width: 120px;
+            color: #fff;
+            font-weight: semi-bold;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            border: none;
+            background: $orange;
+        }
+
+        .social-icons {
+            padding: 30px 0px 0px;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                a {
+                    i {
+                        height: 50px;
+                        width: 50px;
+                        background-color: #fff;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #d5d5d5;
+                        @include transition(.3s);
+
+                        &:hover {
+                            background-color: $orange;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
