@@ -1,6 +1,6 @@
 #top-nav {
     height: 50px;
-    background: #F5F3F2;
+    background: $bg;
 
     .col-lg-8 {
         padding-right: 0px;
@@ -41,7 +41,7 @@
         font-weight: 400;
         line-height: 38px;
         color: $darkGray;
-        background-color: #F5F3F2;
+        background-color: $bg;
         background-size: 16px 12px;
         border: none;
         display: inline-block;
@@ -197,7 +197,7 @@
         }
     }
 
-    .fourth-part {
+    .third-part {
         ul {
             li {
                 display: inline-block;
@@ -225,6 +225,114 @@
                         line-height: 18px;
                     }
                 }
+            }
+        }
+
+        .sub-dropdown {
+            position: relative;
+
+            .sub-dropdown-menu {
+                width: 300px;
+                position: absolute;
+                padding: 20px;
+                top: 100px;
+                right: -30px;
+                background: #fff;
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(.3s);
+                margin-top: 0;
+                z-index: 9;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+                -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+                box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+
+                .products {
+                    padding: 0px;
+
+                    .img-box {
+                        height: 50px;
+                        width: 50px;
+                        overflow: hidden;
+                        line-height: 40px;
+                        padding: 5px;
+                        border-radius: 2px;
+                        margin-top: 12px;
+                        background-color: $bg;
+                    }
+
+                    .title {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $darkGray;
+                        @include transition(.3s);
+
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+
+                    p {
+                        line-height: 20px;
+                    }
+
+                    .delete-btn {
+                        font-size: 18px;
+                        color: $orange;
+                        cursor: pointer;
+                    }
+                }
+
+                .divider {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #dddddd;
+                }
+
+                .sub-total {
+                    text-align: left;
+
+                    p {
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        line-height: 60px;
+                        margin-bottom: 0px;
+
+                        .total-price {
+                            font-size: 18px;
+                            float: right;
+                            color: $orange;
+                        }
+                    }
+                }
+
+                .buttons {
+                    .cart-btn {
+                        display: block;
+                        padding: 15px;
+                        background-color: $bg;
+                        text-align: center;
+                        color: rgb(68, 67, 67);
+                    }
+
+                    .checkout-btn {
+                        display: block;
+                        padding: 15px;
+                        background-color: $orange;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            &:hover .sub-dropdown-menu {
+                @include transition(.3s);
+                opacity: 1;
+                visibility: visible;
+                top: 75%;
+                transform: rotateX(0deg);
             }
         }
     }
@@ -315,7 +423,7 @@
         .categories-dropdown {
             display: block;
             position: absolute;
-            background: #f5f3f2;
+            background: $bg;
             width: 270px;
             padding: 10px 0 0px;
             height: auto;
@@ -363,11 +471,11 @@
                     position: absolute;
                     top: -100px;
                     right: -250px;
-                    background: #f5f3f2;
+                    background: $bg;
                     display: block;
                     opacity: 0;
                     visibility: hidden;
-                    transition: .3s;
+                    @include transition(.3s);
                     margin-top: 0;
 
                     a {
@@ -382,7 +490,7 @@
                 }
 
                 &:hover .sub-dropdown-menu {
-                    transition: .3s;
+                    @include transition(.3s);
                     opacity: 1;
                     visibility: visible;
                     top: 0%;
@@ -416,15 +524,26 @@
                 padding: 30px;
                 border-radius: 0px;
                 border: none;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+                -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
                 box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
 
                 ul {
                     padding-left: 0px;
                 }
 
-                a {
+                .title {
                     line-height: 27px;
                     padding: 8px 30px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    display: block;
+                    color: $darkGray;
+                }
+
+                .item {
+                    line-height: 27px;
+                    padding: 6px 30px;
                     font-size: 16px;
                     font-weight: normal;
                     display: block;
@@ -437,8 +556,31 @@
                 }
 
                 .img-box {
-                    background: #f5f3f2;
-                    height: 270px;
+                    background: $bg;
+                    height: 280px;
+                    padding: 20px;
+                    text-align: center;
+
+                    .title {
+                        font-size: 26px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        padding: 15px 0px 0px;
+                        margin-bottom: -6px;
+
+                        span {
+                            color: $orange;
+                        }
+                    }
+
+                    a {
+                        text-transform: uppercase;
+
+                        i {
+                            margin-left: 3px;
+                            color: $orange;
+                        }
+                    }
                 }
             }
         }
@@ -446,6 +588,11 @@
         .dropdown {
             .normal-dropdown-menu {
                 width: 250px;
+                border-radius: 0px;
+                border: none;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+                -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+                box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
 
                 a {
                     line-height: 27px;
@@ -455,6 +602,7 @@
                     display: block;
                     color: $darkGray;
                     @include transition(.3s);
+
 
                     &:hover {
                         color: $orange;
