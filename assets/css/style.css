@@ -57,6 +57,79 @@ p {
   display: block;
   color: #252525; }
 
+#banner-part {
+  margin: 30px 0; }
+  #banner-part .main-banner {
+    background-color: #f5f3f2;
+    background-image: url(../images/banner.jpg);
+    background-size: cover, contain;
+    background-position: center, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 530px;
+    border-radius: 10px;
+    padding-left: 30px; }
+    #banner-part .main-banner .text-part {
+      justify-content: center; }
+    #banner-part .main-banner .announce-title {
+      padding-top: 120px;
+      text-transform: uppercase;
+      color: #e5371b;
+      padding-bottom: 0px;
+      margin-bottom: 0px; }
+    #banner-part .main-banner .banner-title {
+      font-size: 45px;
+      font-weight: normal; }
+      #banner-part .main-banner .banner-title span {
+        font-weight: 600; }
+    #banner-part .main-banner p {
+      padding-bottom: 15px; }
+    #banner-part .main-banner .shop-btn {
+      padding: 10px 25px;
+      background-color: #e5371b;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      color: #fff;
+      border-radius: 20px;
+      text-transform: uppercase; }
+  #banner-part .banner-box {
+    margin-bottom: 30px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1);
+    position: relative; }
+    #banner-part .banner-box img {
+      width: 100%;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -ms-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s;
+      transition: all linear 0.3s; }
+    #banner-part .banner-box:hover img {
+      transform: scale(1.1); }
+    #banner-part .banner-box .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-left: 30px; }
+      #banner-part .banner-box .overlay .title {
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 80px 0px 20px 0px;
+        margin-bottom: -6px;
+        color: #fff; }
+      #banner-part .banner-box .overlay a {
+        text-transform: uppercase;
+        color: #fff; }
+        #banner-part .banner-box .overlay a i {
+          margin-left: 3px;
+          color: #e5371b; }
+
 #top-nav {
   height: 50px;
   background: #f5f3f2; }

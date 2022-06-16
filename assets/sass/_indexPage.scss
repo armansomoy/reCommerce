@@ -1,1 +1,99 @@
-body {}
+#banner-part {
+    margin: 30px 0;
+
+
+    .main-banner {
+        background-color: $bg;
+        background-image: url(../images/banner.jpg);
+        background-size: cover, contain;
+        background-position: center, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        height: 530px;
+        border-radius: 10px;
+        padding-left: 30px;
+
+        .text-part {
+            justify-content: center;
+        }
+
+        .announce-title {
+            padding-top: 120px;
+            text-transform: uppercase;
+            color: $orange;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .banner-title {
+            font-size: 45px;
+            font-weight: normal;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        p {
+            padding-bottom: 15px;
+        }
+
+        .shop-btn {
+            padding: 10px 25px;
+            background-color: #e5371b;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            color: #fff;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .banner-box {
+        margin-bottom: 30px;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        transform: scale(1);
+        position: relative;
+
+        img {
+            width: 100%;
+            @include transition(.3s);
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-left: 30px;
+
+            .title {
+                font-size: 26px;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding: 80px 0px 20px 0px;
+                margin-bottom: -6px;
+                color: #fff;
+            }
+
+            a {
+                text-transform: uppercase;
+                color: #fff;
+
+                i {
+                    margin-left: 3px;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
