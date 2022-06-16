@@ -263,6 +263,8 @@ p {
         #search-nav .third-part .sub-dropdown .sub-dropdown-menu .products .title {
           font-size: 16px;
           font-weight: 600;
+          padding: 0px;
+          line-height: 20px;
           color: #252525;
           -webkit-transition: all linear 0.3s;
           -moz-transition: all linear 0.3s;
@@ -599,7 +601,7 @@ p {
       bottom: 10px;
       left: 0;
       height: 2px;
-      width: 25%;
+      width: 45px;
       background-color: #e5371b; }
   #footer .fourth-part .footer-title {
     padding: 0px 0px 60px; }
@@ -616,14 +618,15 @@ p {
     background: #ffff;
     color: #6b6b6b;
     font-size: 15px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    margin-right: -5px; }
   #footer .fourth-part button {
     width: 120px;
     color: #fff;
     font-weight: semi-bold;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
+    height: 53px;
+    line-height: 53px;
     border: none;
     background: #e5371b; }
   #footer .fourth-part .social-icons {
@@ -647,5 +650,14 @@ p {
         #footer .fourth-part .social-icons li a i:hover {
           background-color: #e5371b;
           color: #fff; }
+
+#last-footer {
+  padding: 20px 0;
+  background-color: #252525; }
+  #last-footer p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

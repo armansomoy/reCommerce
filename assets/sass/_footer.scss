@@ -58,7 +58,7 @@
             bottom: 10px;
             left: 0;
             height: 2px;
-            width: 25%;
+            width: 45px;
             background-color: $orange;
         }
     }
@@ -84,6 +84,7 @@
             color: #6b6b6b;
             font-size: 15px;
             padding-left: 15px;
+            margin-right: -5px;
         }
 
         button {
@@ -91,8 +92,8 @@
             color: #fff;
             font-weight: semi-bold;
             text-align: center;
-            height: 50px;
-            line-height: 50px;
+            height: 53px;
+            line-height: 53px;
             border: none;
             background: $orange;
         }
@@ -123,5 +124,17 @@
                 }
             }
         }
+    }
+}
+
+#last-footer {
+    padding: 20px 0;
+    background-color: #252525;
+
+    p {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 0px;
+        line-height: 40px;
     }
 }
