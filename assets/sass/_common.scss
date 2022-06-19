@@ -85,7 +85,64 @@ p {
     font-weight: 600;
     display: block;
     color: $blue;
+    @include transition(.3s);
+
+    &:hover {
+        color: $orange;
+    }
 }
+
+.under-heading {
+    background-color: #e9e9e9;
+    height: 2px;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100px;
+        background-color: $orange;
+    }
+}
+
+.review-star {
+    li {
+        display: inline-block;
+
+        i {
+            color: #fe9f24;
+        }
+    }
+}
+
+.price {
+    font-size: 18px;
+    color: $orange;
+    font-weight: 500;
+
+    span {
+        font-size: 14px;
+        color: #b4b4b4;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            background-color: #b4b4b4;
+            width: 100%;
+            top: 50%;
+            width: 100%;
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+}
+
 
 // -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
 // -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
