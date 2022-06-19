@@ -47,6 +47,7 @@ img {
 ul,
 ol {
     list-style: none;
+    padding-left: 0px;
 }
 
 
@@ -57,16 +58,35 @@ ol {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     color: $darkGray;
 }
 
 .title {
     line-height: 27px;
-    padding: 8px 30px;
     font-size: 18px;
     font-weight: 600;
     display: block;
     color: $darkGray;
 }
+
+.section-title {
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    color: $darkGray;
+    text-transform: uppercase;
+}
+
+.products-title {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: $blue;
+}
+
+// -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+// -moz-box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
+// box-shadow: rgba(0, 0, 0, 0.06) 0px 20px 30px;
