@@ -794,6 +794,139 @@ p {
             left: 0;
             transform: translate(0%, -50%); }
 
+#hot-sales {
+  padding: 40px 0px; }
+  #hot-sales .hot-sale-box {
+    height: 250px;
+    padding: 60px;
+    background-color: #f5f3f2; }
+    #hot-sales .hot-sale-box .hot-sale-title {
+      font-size: 44px;
+      font-weight: normal;
+      color: #252525; }
+      #hot-sales .hot-sale-box .hot-sale-title span {
+        font-weight: 600;
+        color: #e5371b; }
+    #hot-sales .hot-sale-box a {
+      text-transform: uppercase;
+      font-weight: 600; }
+      #hot-sales .hot-sale-box a i {
+        margin-left: 3px;
+        color: #e5371b; }
+
+#double-banner {
+  padding: 40px 0; }
+  #double-banner .short-box {
+    background-color: #f5f3f2;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; }
+    #double-banner .short-box .text {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(0%, -50%); }
+      #double-banner .short-box .text .title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 10px; }
+        #double-banner .short-box .text .title span {
+          color: #e5371b;
+          font-weight: 600; }
+      #double-banner .short-box .text p {
+        color: #707070; }
+      #double-banner .short-box .text a {
+        text-transform: uppercase;
+        font-weight: 600; }
+        #double-banner .short-box .text a i {
+          margin-left: 3px;
+          color: #e5371b; }
+    #double-banner .short-box .img-box {
+      position: absolute;
+      right: 25px;
+      bottom: -15px;
+      height: 275px;
+      width: 220px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+#clients-part {
+  padding: 40px 0px; }
+  #clients-part .slick-slide {
+    margin: 0px 20px; }
+  #clients-part .slick-slide img {
+    width: 100%; }
+  #clients-part .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent; }
+  #clients-part .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+  #clients-part .slick-list:focus {
+    outline: none; }
+  #clients-part .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+  #clients-part .slick-slider .slick-track,
+  #clients-part .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  #clients-part .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block; }
+  #clients-part .slick-track:before,
+  #clients-part .slick-track:after {
+    display: table;
+    content: ''; }
+  #clients-part .slick-track:after {
+    clear: both; }
+  #clients-part .slick-loading .slick-track {
+    visibility: hidden; }
+  #clients-part .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px; }
+  #clients-part [dir='rtl'] .slick-slide {
+    float: right; }
+  #clients-part .slick-slide img {
+    display: block; }
+  #clients-part .slick-slide.slick-loading img {
+    display: none; }
+  #clients-part .slick-slide.dragging img {
+    pointer-events: none; }
+  #clients-part .slick-initialized .slick-slide {
+    display: block; }
+  #clients-part .slick-loading .slick-slide {
+    visibility: hidden; }
+  #clients-part .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+  #clients-part .slick-arrow.slick-hidden {
+    display: none; }
+
 #top-nav {
   height: 50px;
   background: #f5f3f2; }
@@ -1357,15 +1490,19 @@ p {
     font-size: 15px;
     padding-left: 15px;
     margin-right: -5px; }
+  #footer .fourth-part .input-group {
+    width: 86%; }
+  #footer .fourth-part .form-control {
+    border: 1px solid #dddddd; }
   #footer .fourth-part button {
     width: 120px;
     color: #fff;
     font-weight: semi-bold;
     text-align: center;
-    height: 53px;
-    line-height: 53px;
+    line-height: 42px;
     border: none;
-    background: #e5371b; }
+    background: #e5371b;
+    border-radius: 0px; }
   #footer .fourth-part .social-icons {
     padding: 30px 0px 0px; }
     #footer .fourth-part .social-icons li {

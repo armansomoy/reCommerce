@@ -87,15 +87,23 @@
             margin-right: -5px;
         }
 
+        .input-group {
+            width: 86%;
+        }
+
+        .form-control {
+            border: 1px solid #dddddd;
+        }
+
         button {
             width: 120px;
             color: #fff;
             font-weight: semi-bold;
             text-align: center;
-            height: 53px;
-            line-height: 53px;
+            line-height: 42px;
             border: none;
-            background: $orange;
+            background: #e5371b;
+            border-radius: 0px;
         }
 
         .social-icons {
